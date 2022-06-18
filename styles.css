@@ -1,0 +1,648 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url(Poppins\Poppins-Black.ttf) format('ttf');
+}
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  --primary-color: #2f7183;
+  --secondary-color: #e5f0f3;
+  font-size: 13px;
+}
+
+body {
+  color: black;
+  text-align: justify;
+  margin: 0;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0; /*Reset css*/
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.btn-white {
+  border: solid 2px var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 0.5em;
+  padding: 10px 10px 10px 10px;
+  width: 30%;
+  margin: 5px;
+}
+
+.btn-fonce {
+  background-color: var(--primary-color);
+  color: white;
+  border: 2px;
+  border-radius: 0.7em;
+  padding: 10px 10px 10px 10px;
+  width: 30%;
+  margin: 5px;
+}
+.btn-1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.burger {
+  position: relative;
+  z-index: 999;
+  font-size: 30px;
+  margin-right: 10px;
+}
+span {
+  color: var(--primary-color);
+}
+
+header {
+  display: flex;
+  width: 100%;
+  color: #2f7183;
+}
+.active {
+  max-height: 600px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-height: 40px;
+  height: auto;
+  overflow: hidden;
+  justify-content: end;
+  padding-right: 15px;
+  border-bottom: solid 2px var(--primary-color);
+  transition: max-height 0.3s;
+}
+.elements .solo {
+  display: none;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 100%;
+
+  text-align: center;
+  font-size: 16px;
+}
+.menu a {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  color: #2f7183;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.title {
+  padding-top: 20px;
+}
+h2 {
+  text-align: center;
+  font-size: 35px;
+  width: 100%;
+  margin: 15px 0px 15px 0px;
+}
+
+h3 {
+  display: inline-block;
+  border-radius: 1.5em;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 5px 15px 5px 15px;
+}
+p {
+  line-height: 1.7em;
+  width: 100%;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0% 7% 0% 7%;
+}
+.elements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title-screen {
+  background-color: var(--secondary-color);
+  padding-bottom: 20px;
+  text-align: center;
+  padding: 5% 7% 5% 7%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: linear-gradient(106.06deg, #073a69 -2.69%, #6ed3dc 77.95%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.title-article {
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 270px;
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 15px 0px 15px 0px;
+  border-radius: 2em;
+  height: auto;
+  box-shadow: 14px 14px 0px -1px var(--secondary-color);
+  margin-top: 2em;
+}
+.bat {
+  padding: 7px;
+  width: 40%;
+  height: auto;
+}
+.info {
+  padding-top: 30px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-2 {
+  max-width: 270px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.container-3 {
+  max-width: 270px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--secondary-color);
+  border-radius: 2em;
+  padding: 10px 0px 10px 0px;
+  margin: 15px 0px 0px 0px;
+  justify-content: center;
+}
+.container-4 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.solo {
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: auto;
+  box-shadow: 14px 14px 0px -1px var(--secondary-color);
+  border-radius: 2em;
+  margin-top: 2em;
+}
+.nrj {
+  padding: 7px;
+  width: 110px;
+  height: auto;
+}
+
+.energies {
+  text-align: center;
+}
+.new-dimension {
+  background-color: var(--secondary-color);
+}
+.upgrades {
+  padding-bottom: 30px;
+}
+
+.bat-upgrades {
+  width: 100%;
+  height: auto;
+}
+.card {
+  background-color: white;
+  border-radius: 1em;
+  margin: 5% 5% 0% 5%;
+
+  width: 30%;
+  height: auto;
+  box-shadow: 0px 4px 5px 2px #d8d8d8;
+}
+
+.card p {
+  margin: 0;
+  font-weight: 700;
+  padding: 3px 0px 3px 0px;
+  height: 50%;
+}
+.roadmap {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+.roadmap p {
+  line-height: normal;
+}
+
+.part:nth-child(2n):before {
+  content: '';
+  position: absolute;
+  background-color: var(--primary-color);
+  width: 3px;
+  height: 100%;
+  left: 7%;
+  z-index: -99;
+}
+
+.marker {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 2em;
+  background-color: var(--primary-color);
+  left: calc(7% - 8px);
+  transform: translateY(18px);
+}
+section.roadmap {
+  position: relative;
+  padding-bottom: 20px;
+  overflow: hidden;
+  z-index: -999;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.question span {
+  font-size: 40px;
+  font-weight: 100;
+}
+.question p {
+  margin: 0;
+  width: 70%;
+  line-height: normal;
+}
+.reponse {
+  padding: 0px 15px 0px 15px;
+}
+section.FAQ .info > * {
+  transition: max-height 0.7s;
+}
+
+.dropdown {
+  width: 100%;
+  background-color: var(--secondary-color);
+  border: solid 3px var(--primary-color);
+  border-radius: 1em;
+  padding: 0em 1em 1em 1em;
+  max-height: 32px;
+  height: auto;
+  margin: 5px;
+  overflow: hidden;
+}
+.dropdown-active {
+  max-height: 400px;
+}
+
+.team {
+  background-color: var(--primary-color);
+  color: white;
+}
+.logo {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+}
+.logo img {
+  width: 60px;
+  height: 60px;
+  padding: 2em;
+}
+.roadmap .info {
+  justify-content: left;
+  padding: 15px;
+}
+.roadmap .part {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  text-align: left;
+}
+.roadmap h2 {
+  padding: 5% 0% 5% 0%;
+}
+
+@media (min-width: 576px) {
+  :root {
+    font-size: 17px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .container-2 {
+    max-width: 100%;
+  }
+  .container-3 {
+    max-width: 100%;
+  }
+  .container-4 {
+    max-width: 100%;
+  }
+  .bat {
+    width: 20%;
+  }
+  .container-4 .card-nrj {
+    width: 20%;
+  }
+  .nrj {
+    width: 80%;
+  }
+  .bat-upgrades {
+    width: 100%;
+  }
+  .card {
+    width: 30%;
+    margin: 15px;
+  }
+  .roadmap {
+    justify-content: left;
+  }
+  .roadmap .info {
+    justify-content: left;
+  }
+  .dropdown {
+    max-height: 40px;
+    transition: max-height 0.3s ease-out;
+  }
+  .dropdown p {
+    margin: 10px;
+  }
+  .dropdown-active {
+    max-height: 400px;
+  }
+  .solo {
+    width: 70%;
+  }
+  .logo {
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .logo img {
+    padding: 1em;
+  }
+
+  .marker {
+    transform: translateY(25px);
+  }
+
+  .btn-fonce,
+  .btn-white {
+    width: 150px;
+    margin: 5px;
+    border: solid 2px var(--primary-color);
+  }
+}
+@media (min-width: 768px) {
+  nav {
+    max-height: 100%;
+    padding-right: 25px;
+  }
+  h1 {
+    font-size: 65px;
+  }
+  h2 {
+    font-size: 45px;
+  }
+
+  .burger {
+    display: none;
+  }
+  .menu {
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .menu a {
+    width: 100px;
+  }
+  .menu a button {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .solo {
+    width: 60%;
+  }
+
+  .card {
+    width: 20%;
+  }
+  .part:nth-child(2n)::before {
+    left: calc(50% - 3px);
+  }
+  .marker {
+    left: calc(50% - 11px);
+    transform: translateY(31px);
+  }
+  .roadmap {
+    justify-content: center;
+  }
+  .roadmap .info {
+    flex-wrap: wrap;
+    width: 70%;
+  }
+  .roadmap .part {
+    width: 50%;
+  }
+  .timeline-item {
+    padding: 25px;
+    width: 200px;
+  }
+  .roadmap .part h3 {
+    width: fit-content;
+    overflow-wrap: normal;
+    margin: 0% 10% 0% 10%;
+    text-align: center;
+  }
+  .roadmap .info .part:nth-child(4n) {
+    justify-content: left;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    font-size: 15px;
+  }
+  section {
+    padding: 0% 15% 0% 15%;
+  }
+  .elements .solo {
+    display: flex;
+  }
+  .title-screen {
+    padding: 5% 10% 5% 10%;
+  }
+  h1 {
+    font-size: 85px;
+    text-align: left;
+    width: 700px;
+    height: 300px;
+  }
+  .title-article {
+    margin-top: 30px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .sub-title {
+    position: relative;
+
+    text-align: left;
+    width: 50%;
+    transform: translate(40%, -115px);
+  }
+
+  .info {
+    flex-wrap: nowrap;
+  }
+
+  .btn-1 {
+    justify-content: left;
+  }
+
+  .solo {
+    width: 100%;
+  }
+  .container {
+    max-width: 70%;
+  }
+  .container-2 {
+    padding: 2em 0em 2em 0em;
+    width: 90%;
+  }
+  .container-3 {
+    flex-wrap: wrap;
+    padding: 2em 0em 2em 0em;
+    width: 90%;
+  }
+  .properties .bat {
+    width: 40%;
+  }
+  .container-4 {
+    padding: 2em 0em 2em 0em;
+    width: 100%;
+  }
+  .elements {
+    width: 50%;
+    padding: 15px;
+    align-items: center;
+  }
+
+  .energies h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .energies .elements {
+    width: 100%;
+  }
+  .new-dimension .info {
+    padding: 0;
+  }
+  .new-dimension .elements {
+    height: 100%;
+  }
+  .container-2 {
+    padding: 0;
+  }
+  .center {
+    text-align: center;
+  }
+
+  .upgrades .elements {
+    width: 100%;
+    text-align: left;
+  }
+  .roadmap .info {
+    width: 100%;
+  }
+  .FAQ .elements {
+    width: 80%;
+    padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 115px;
+    text-align: left;
+    width: 800px;
+    height: 400px;
+  }
+  h2 {
+    font-size: 55px;
+  }
+  .timeline-item {
+    margin: 0px 40px 0px 40px;
+    width: 250px;
+  }
+  .roadmap .info .part:nth-child(4n) .timeline-item {
+    width: 400px;
+    margin-left: 100px;
+  }
+  .FAQ .elements {
+    width: 65%;
+  }
+  .sub-title {
+    transform: translate(50%, -115px);
+  }
+}
+
+@media (min-width: 1600px) {
+  :root {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 65px;
+  }
+  section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .roadmap h2 {
+    padding: 0;
+  }
+  .FAQ .info {
+    padding: 0;
+  }
+  .FAQ h2 {
+    margin-top: 0;
+  }
+}
